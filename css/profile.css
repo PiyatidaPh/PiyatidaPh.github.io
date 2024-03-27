@@ -1,3 +1,5 @@
+/* ส่วนของ CSS ปกติ */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +8,7 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(79, 87, 111);
 }
+
 nav {
     background-color: #2c2e59;
     font-family: Abadi, sans-serif;
@@ -26,85 +29,107 @@ nav a {
 nav a:hover {
     text-decoration: underline;
 }
+
 .container {
-    text-align: center; /* จัดตำแหน่งของเนื้อหาและข้อความให้อยู่ตรงกลาง */
+    text-align: center;
 }
 
 .content {
-    text-align: center; /* จัดข้อความให้อยู่ตรงกลางแนวนอน */
-    flex-grow: 1; /* ขยายขนาดของ content เพื่อให้รับพื้นที่ที่เหลือ */
+    text-align: center;
+    flex-grow: 1;
 }
+
 h1 {
     color: rgb(176, 198, 217);
-    font-family: KodchiangUPC, sans-serif; 
+    font-family: KodchiangUPC, sans-serif;
     font-size: 50px;
 }
+
 h2 {
     color: rgb(186, 197, 206);
-    font-family: KodchiangUPC, sans-serif; 
-    font-size: 30px; 
+    font-family: KodchiangUPC, sans-serif;
+    font-size: 30px;
     margin-top: 10px;
 }
-h3{
+
+h3 {
     color: rgb(154, 190, 222);
     font-family: KodchiangUPC, sans-serif;
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 5px;
 }
-h4{
+
+h4 {
     color: rgb(160, 218, 216);
     font-family: KodchiangUPC, sans-serif;
     font-size: 25px;
     margin-top: 10px;
     margin-bottom: 10px;
-    
 }
-h5{
+
+h5 {
     color: rgb(154, 190, 222);
     font-family: KodchiangUPC, sans-serif;
     font-size: 20px;
     margin-top: 40px;
 }
-p{
-    color: rgb(154, 190, 222);
+
+p {
+    color: rgb(255, 255, 255);
     font-family: KodchiangUPC, sans-serif;
     font-size: 20px;
     margin-top: 20px;
 }
+
 .profile-info {
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
 }
+
 .profile-info h2 {
     color: #333;
 }
+
 .profile-info p {
     color: #666;
 }
 
 .wrapper {
     display: flex;
-    justify-content: center; /* จัดตำแหน่งของรูปภาพตรงกลางด้านบน */
-    margin-top: 20px; /* ระยะห่างด้านบนของ wrapper */
+    justify-content: center;
+    margin-top: 20px;
 }
-
 
 .profile-image {
     display: flex;
-    justify-content: center; /* จัดตำแหน่งของรูปภาพโปรไฟล์ตรงกลางด้านบน */
+    justify-content: center;
 }
 
-
 .circle {
-    border-radius: 50%; /* ทำให้ส่วนนอกเป็นวงกลม */
-    overflow: hidden; /* ซ่อนส่วนที่เกินขอบวงกลม */
-    width: 450px; /* กำหนดความกว้างของวงกลม */
-    height: 450px; /* กำหนดความสูงของวงกลม */
+    border-radius: 50%;
+    overflow: hidden;
+    width: 450px;
+    height: 450px;
 }
 
 .circle img {
-    width: 100%; /* ปรับขนาดของรูปภาพให้เต็มกว้างของวงกลม */
-    height: auto; /* ให้รูปภาพปรับสัดส่วนอัตโนมัติเมื่อกำหนดความกว้าง */
+    width: 100%;
+    height: auto;
 }
+
+@media only screen and (max-width: 768px) {
+    .circle {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .circle {
+        width: 200px;
+        height: 200px;
+    }
+}
+

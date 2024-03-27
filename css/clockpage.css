@@ -36,8 +36,6 @@ h1 {
     color: aliceblue;
     font-family: Britannic, sans-serif; 
     font-size: 100px; 
-    /* margin-top: 500px;
-    margin-bottom: 50px; */
 }
 .clock {
     font-family: ADLaM, sans-serif;
@@ -51,4 +49,15 @@ h1 {
 }
 #digital-clock {
     font-size: 2em;
+}
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-size: auto;
+    }
 }

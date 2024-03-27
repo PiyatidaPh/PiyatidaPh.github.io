@@ -1,0 +1,54 @@
+/* CSS styles สำหรับการจัดรูปแบบนาฬิกาดิจิตอล */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/image/bgc.jpg)
+}
+
+nav {
+    background-color: #2c2e59;
+    font-family: Abadi, sans-serif;
+    color: rgb(193, 182, 235);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: right;
+}
+
+nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+.container {
+    text-align: center;
+    margin-top: 50px;
+}
+h1 {
+    color: aliceblue;
+    font-family: Britannic, sans-serif; 
+    font-size: 100px; 
+    /* margin-top: 500px;
+    margin-bottom: 50px; */
+}
+.clock {
+    font-family: ADLaM, sans-serif;
+    color: #c7fbff; 
+    border: 15px solid #e2f6094e;
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    width: 400px;
+    height: 340px;
+}
+#digital-clock {
+    font-size: 2em;
+}

@@ -13,6 +13,14 @@ function updateClock() {
 
     // แสดงเวลาบนหน้า HTML
     document.getElementById('digital-clock').innerHTML = timeString;
+    // เลือกปุ่มหยุดเวลาโดยใช้ ID
+    const stopButton = document.getElementById('stop-button');
+
+    // เมื่อคลิกที่ปุ่มหยุดเวลา
+    stopButton.addEventListener('click', function() {
+    clearInterval(timer); // หยุดการทำงานของตัวนับเวลา
+});
+
 }
 
 // เรียกใช้ฟังก์ชั่น updateClock ทุกๆ 1 วินาที

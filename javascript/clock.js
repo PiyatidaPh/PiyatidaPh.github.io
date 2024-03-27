@@ -16,12 +16,4 @@ function updateClock() {
 }
 
 // เรียกใช้ฟังก์ชั่น updateClock ทุกๆ 1 วินาที
-var timer = setInterval(updateClock, 1000);
-
-// เลือกปุ่มหยุดเวลาโดยใช้ ID
-const stopButton = document.getElementById('stop-button');
-
-// เมื่อคลิกที่ปุ่มหยุดเวลา
-stopButton.addEventListener('click', function() {
-    clearInterval(timer); // หยุดการทำงานของตัวนับเวลา
-});
+setInterval(updateClock, 1000);
